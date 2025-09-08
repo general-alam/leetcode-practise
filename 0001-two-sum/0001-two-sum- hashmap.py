@@ -1,23 +1,24 @@
 class Solution(object):
     def twoSum(self, nums, target):
         """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
+        Hashmap approach:
+        - Iterate once through nums
+        - For each number, check if its complement (target - n) has been seen
+        - If yes, return the pair of indices
+        - Otherwise, store the number in the hashmap
+        
+        Time: O(n)  — each lookup/insertion is O(1) average
+        Space: O(n) — hashmap may store all elements
+        """ 
 
-        prevMap = {} # create a hashmap of the integers we've explored from the nums list
+        prevMap = {}
 
         for i, n in enumerate(nums):
             difference = target - n
             if difference in prevMap:
                 return [prevMap[difference], i]
-            prevMap[n] = i #if the needed value to obtain the target is not found, add i to the hashmap of explored integers
+            prevMap[n] = i
 
-
-
-        # Time complexity - O(n)
-        # Space complexity - O(n)
 
 
 
