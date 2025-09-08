@@ -1,10 +1,10 @@
 # LeetCode Practice  
 
-A collection of LeetCode problems I’ve solved and reviewed.  
+A collection of LeetCode problems I’ve solved.  
 
-### Goals  
-- Strengthen Python fundamentals: practice data structures and algorithmic techniques  
-- Write efficient solutions with time & space complexity in mind  
+### Focus  
+- Python Fundamentals: practice data structures and algorithmic techniques  
+- Efficient solutions in regards to time & space complexity 
 - Develop better problem-solving intuition through regular practice
 
 ### Notes  
