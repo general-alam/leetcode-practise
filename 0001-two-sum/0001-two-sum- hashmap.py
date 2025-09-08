@@ -6,27 +6,19 @@ class Solution(object):
         :rtype: List[int]
         """
 
-        A = []
-        for i, num in enumerate(nums):
-            A.append([num,i])
-        # creates a list of an integer and it's corresponding index 
+        prevMap = {} # create a hashmap of the integers we've explored from the nums list
 
-        A.sort()
-        i = 0
-        j = len(nums) - 1
-        while i < j: 
-            current = A[i][0] + A[j][0]
-            if current == target: 
-                # returns it in the correct order - smallest index first
-                return [min(A[i][1], A[j][1]), max(A[i][1], A[j][1])]
-            
-            # moves across the sorted list appropriately to meet the match quicker
-            elif current < target:
-                i += 1
-            elif current > target:
-                j -= 1 
-        return []
+        for i, n in enumerate(nums):
+            difference = target - n
+            if difference in prevMap:
+                return [prevMap[difference], i]
+            prevMap[n] = i #if the needed value to obtain the target is not found, add i to the hashmap of explored integers
 
-        # Time Complexity: O(n log n)
-        # Space Complexity: O(n)
+
+
+        # Time complexity - O(n)
+        # Space complexity - O(n)
+
+
+
         
