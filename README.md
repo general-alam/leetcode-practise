@@ -1,15 +1,12 @@
-# LeetCode Practice
+# LeetCode Practice  
 
-A collection of LeetCode problems I’ve solved and tracked.
+A collection of LeetCode problems I’ve solved and reviewed.  
 
-## Goals
+## Goals  
+- Strengthen Python fundamentals: practice data structures and algorithmic techniques  
+- Write efficient solutions with time & space complexity in mind  
+- Develop better problem-solving intuition through regular practice
 
--Strengthen Python fundamentals: learn and apply different data structures and  algorithmic techniques
-
--Focus on writing efficient solutions (with time & space complexities in mind)
-
--Build consistency by documenting progress
-
-## Notes
-
--Repository synced with [LeetHub](https://github.com/QasimWani/LeetHub)
+## Notes  
+- Each solution includes brief explanation and complexity analysis  
+- Repository synced with [LeetHub](https://github.com/QasimWani/LeetHub)  
